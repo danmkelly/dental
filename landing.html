@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI for Business — Project Portfolio</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: #faf8f5;
+    color: #1e293b;
+    line-height: 1.6;
+  }
+  .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+  header {
+    text-align: center;
+    padding: 60px 0 40px;
+  }
+  header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+  }
+  header .sub {
+    font-size: 1rem;
+    color: #64748b;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  header .module {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #94a3b8;
+  }
+  .section-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #94a3b8;
+    margin: 40px 0 16px;
+    text-align: center;
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  .project-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 28px 26px 24px;
+    text-decoration: none;
+    border: 1px solid #e8e4dd;
+    transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+    display: flex;
+    flex-direction: column;
+  }
+  .project-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.07);
+    border-color: #c4bdb2;
+  }
+  .project-card .number {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+  }
+  .project-card .title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+  }
+  .project-card .desc {
+    font-size: 0.88rem;
+    color: #64748b;
+    flex: 1;
+    margin-bottom: 14px;
+  }
+  .project-card .tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .tag {
+    display: inline-block;
+    padding: 3px 9px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+  .tag-coffee { background: #fdf2e0; color: #92400e; }
+  .tag-hotel  { background: #e0e7ff; color: #3730a3; }
+  .tag-dental { background: #dcfce7; color: #166534; }
+  .tag-bonus  { background: #fce7f3; color: #9d174d; }
+  .number-t1 { color: #d97706; }
+  .number-t2 { color: #4f46e5; }
+  .number-t3 { color: #16a34a; }
+  .bonus-section {
+    margin: 36px 0 50px;
+  }
+  .bonus-card {
+    background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 100%);
+    border: 2px dashed #e9b5cf;
+    border-radius: 10px;
+    padding: 28px 26px 24px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .bonus-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(157,23,77,0.08);
+  }
+  .bonus-card .number {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    color: #9d174d;
+  }
+  .bonus-card .title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+  }
+  .bonus-card .desc {
+    font-size: 0.88rem;
+    color: #64748b;
+    margin-bottom: 14px;
+  }
+  .arrow {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-top: auto;
+  }
+  .project-card:hover .arrow, .bonus-card:hover .arrow { color: #1a1a1a; }
+  footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: #94a3b8;
+    font-size: 0.8rem;
+    border-top: 1px solid #e8e4dd;
+  }
+  @media (max-width: 600px) {
+    header { padding: 40px 0 24px; }
+    header h1 { font-size: 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <h1>AI Colleague Workflows</h1>
+    <p class="sub">A portfolio of multi-agent innovation programmes built for real-world business challenges</p>
+    <p class="module">PGDip Science in AI for Business &middot; S3 02 Customer Engagement and AI</p>
+  </header>
+
+  <div class="section-label">Core Tutorials</div>
+
+  <div class="project-grid">
+
+    <a href="https://danmkelly.github.io/fiveagentcoffee/" class="project-card">
+      <div class="number number-t1">Tutorial 1</div>
+      <div class="title">NorthSouth Coffee</div>
+      <div class="desc">A five-agent team diagnoses and fixes a failing loyalty programme for a 120-location coffee chain. Research identifies the drop-off moment; design rebuilds the reward journey; the Maker specs the app; and the Marketer crafts the re-engagement campaign.</div>
+      <div class="tag-row">
+        <span class="tag tag-coffee">Loyalty</span>
+        <span class="tag tag-coffee">Retail</span>
+        <span class="tag tag-coffee">CRM</span>
+      </div>
+      <div class="arrow">View project &rarr;</div>
+    </a>
+
+    <a href="https://danmkelly.github.io/novastarhotels/" class="project-card">
+      <div class="number number-t2">Tutorial 2</div>
+      <div class="title">NovaStar Hotels</div>
+      <div class="desc">Post-stay survey redesign for a hotel group struggling with low response rates and poor actionable insight. The Researcher maps the feedback gap; the Designer rethinks timing and channel; the Maker builds the pipeline; the Marketer frames the ask.</div>
+      <div class="tag-row">
+        <span class="tag tag-hotel">Hospitality</span>
+        <span class="tag tag-hotel">Surveys</span>
+        <span class="tag tag-hotel">CX</span>
+      </div>
+      <div class="arrow">View project &rarr;</div>
+    </a>
+
+    <a href="https://danmkelly.github.io/dental/" class="project-card">
+      <div class="number number-t3">Tutorial 3</div>
+      <div class="title">BrightSmile Dental</div>
+      <div class="desc">Reducing a 35% patient no-show rate across 45 clinics. The Researcher segments four no-show patterns; the Designer architects a five-touch reminder sequence; the Maker specs a seven-component pipeline; the Marketer writes segment-specific patient comms.</div>
+      <div class="tag-row">
+        <span class="tag tag-dental">Healthcare</span>
+        <span class="tag tag-dental">Operations</span>
+        <span class="tag tag-dental">Behavioural</span>
+      </div>
+      <div class="arrow">View project &rarr;</div>
+    </a>
+
+  </div>
+
+  <div class="bonus-section">
+    <a href="https://danmkelly.github.io/bingbetsrevenge/" class="bonus-card">
+      <div class="number">Bonus Deliverable</div>
+      <div class="title">World Cup 2026 Predictor &mdash; BingBetsRevenge</div>
+      <div class="desc">An AI-powered prediction engine for the 2026 FIFA World Cup. 72 group-stage match predictions, full knockout bracket simulation, automated results syncing, head-to-head accuracy tracking against five external sources (BBC, ESPN, Opta, Guardian, betting market), and a self-reflection diary updated after every match day. Built with a Python automation pipeline deployed to GitHub Pages.</div>
+      <div class="tag-row">
+        <span class="tag tag-bonus">Sports Analytics</span>
+        <span class="tag tag-bonus">Automation</span>
+        <span class="tag tag-bonus">Prediction</span>
+      </div>
+      <div class="arrow">View project &rarr;</div>
+    </a>
+  </div>
+
+</div>
+
+<footer>
+  PGDip Science in AI for Business &middot; Customer Engagement and Artificial Intelligence &middot; 2026
+</footer>
+
+</body>
+</html>
