@@ -130,7 +130,7 @@
   td { color: #475569; }
   .agent-pipeline {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 12px;
     margin: 20px 0;
   }
@@ -146,6 +146,13 @@
     border-radius: 8px;
     padding: 16px;
     text-align: center;
+    text-decoration: none;
+    display: block;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .agent-card:hover {
+    border-color: #0f4c5c;
+    box-shadow: 0 2px 8px rgba(15,76,92,0.1);
   }
   .agent-card .icon { font-size: 1.5rem; margin-bottom: 6px; }
   .agent-card .name { font-weight: 700; font-size: 0.9rem; color: #1e293b; }
@@ -331,59 +338,63 @@
     <p>The programme was designed and delivered by a team of five AI agents, each with a distinct domain and a clear contract, coordinated by the Manager in a sequential pipeline. No agent operated outside its scope. Every handoff passed through a quality gate.</p>
 
     <div class="agent-pipeline">
-      <div class="agent-card">
+      <a href="alex-chen.html" class="agent-card">
         <div class="icon">&#128270;</div>
         <div class="name">Alex Chen</div>
         <div class="role">Researcher &amp; Analyst</div>
-      </div>
-      <div class="agent-card">
+      </a>
+      <a href="maya-patel.html" class="agent-card">
         <div class="icon">&#128208;</div>
         <div class="name">Maya Patel</div>
         <div class="role">Designer</div>
-      </div>
-      <div class="agent-card">
+      </a>
+      <a href="sam-okonkwo.html" class="agent-card">
         <div class="icon">&#128736;</div>
         <div class="name">Sam Okonkwo</div>
         <div class="role">Maker</div>
-      </div>
-      <div class="agent-card">
+      </a>
+      <a href="ella-johansson.html" class="agent-card">
         <div class="icon">&#128172;</div>
         <div class="name">Ella Johansson</div>
         <div class="role">Marketer</div>
-      </div>
+      </a>
+      <a href="james-oneill.html" class="agent-card">
+        <div class="icon">&#129309;</div>
+        <div class="name">James O'Neill</div>
+        <div class="role">Manager</div>
+      </a>
     </div>
-    <p style="text-align:center; font-size:0.85rem; color:#64748b; margin-bottom:20px;">Coordinated by <strong>James O'Neill</strong> (Manager), who never touched the specialist work &mdash; only decomposed, dispatched, gated, and synthesised.</p>
 
     <h3>The Pipeline</h3>
     <table>
       <tr><th>Stage</th><th>Agent</th><th>What They Produced</th><th>Gate</th></tr>
       <tr>
         <td>1</td>
-        <td>Researcher</td>
+        <td><a href="alex-chen.html" style="color:#0f4c5c;text-decoration:none;font-weight:600;">Researcher</a></td>
         <td>Five no-show segments with quantified evidence; three intervention moments; current reminder audit revealing three structural failures</td>
         <td><span class="tag tag-pass">PASSED</span></td>
       </tr>
       <tr>
         <td>2</td>
-        <td>Designer</td>
+        <td><a href="maya-patel.html" style="color:#0f4c5c;text-decoration:none;font-weight:600;">Designer</a></td>
         <td>Five-touch reminder architecture; patient journey maps (happy path + no-show path); edge case coverage; unambiguous Maker spec</td>
         <td><span class="tag tag-pass">PASSED</span></td>
       </tr>
       <tr>
         <td>3</td>
-        <td>Maker</td>
+        <td><a href="sam-okonkwo.html" style="color:#0f4c5c;text-decoration:none;font-weight:600;">Maker</a></td>
         <td>Seven-component build plan with PMS integration; data model; testing strategy; staggered 9-week rollout with kill switches</td>
         <td><span class="tag tag-pass">PASSED</span></td>
       </tr>
       <tr>
         <td>4</td>
-        <td>Marketer</td>
+        <td><a href="ella-johansson.html" style="color:#0f4c5c;text-decoration:none;font-weight:600;">Marketer</a></td>
         <td>Full copy for five touches; four segment-specific T1 variants; 6-KPI measurement framework; 4-week pilot campaign calendar</td>
         <td><span class="tag tag-pass">PASSED</span></td>
       </tr>
       <tr>
         <td>5</td>
-        <td>Manager</td>
+        <td><a href="james-oneill.html" style="color:#0f4c5c;text-decoration:none;font-weight:600;">Manager</a></td>
         <td>Synthesis: programme status, core insight, trade-off decisions, four recommendations, predicted impact, next steps, open items</td>
         <td><span class="tag tag-rec">FINAL</span></td>
       </tr>
